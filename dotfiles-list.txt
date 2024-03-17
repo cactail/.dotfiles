@@ -1,14 +1,4 @@
-# config, scripts and tutos
-- what to install: emacs, IDEA Toolbox, slack, postman, awscli, kubectl, 
-- init script
-- 
-
 # dotfiles
 .config/alacritty/alacritty.yml
 .doom.d/
-.tmux.conf
 .zshrc
-
-# files that are not going to be included but are needed. Please back up them
-.aws/
-.ssh/

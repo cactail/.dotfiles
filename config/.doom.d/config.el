@@ -18,6 +18,16 @@
 ;; - `doom-unicode-font' -- for unicode glyphs
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
 ;;
+(setq doom-font (font-spec :family "SauceCodePro Nerd Font Mono" :size 15)
+      doom-big-font (font-spec :family "MesloLGS NF" :size 22))
+(after! doom-themes
+  (setq doom-themes-enable-bold t
+        doom-themes-enable-italic t))
+(custom-set-faces!
+  '(font-lock-comment-face :slant italic)
+  '(font-lock-keyword-face :slant italic))
+
+;;
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
@@ -81,3 +91,9 @@
 (key-chord-mode t)
 (key-chord-define-global "fd" 'evil-normal-state)
 (key-chord-define-global "FD" 'evil-normal-state)
+
+;; expand region
+(map!
+ (:map 'override
+  :v "v" #'er/expand-region
+  :v "V" #'er/contract-region))
