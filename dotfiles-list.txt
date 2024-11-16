@@ -1,4 +1,0 @@
-# dotfiles
-.config/alacritty/alacritty.yml
-.doom.d/
-.zshrc

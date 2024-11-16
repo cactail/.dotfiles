@@ -18,7 +18,7 @@
 ;; - `doom-unicode-font' -- for unicode glyphs
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
 ;;
-(setq doom-font (font-spec :family "SauceCodePro Nerd Font Mono" :size 15)
+(setq doom-font (font-spec :family "FiraCode Nerd Font Mono" :size 16)
       doom-big-font (font-spec :family "MesloLGS NF" :size 22))
 (after! doom-themes
   (setq doom-themes-enable-bold t

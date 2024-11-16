@@ -24,5 +24,9 @@ yellow = "#F2D42C"
 background = "#222324"
 foreground = "#BABABA"
 
+[font]
+normal = {family = "FiraCode Nerd Font Mono"}
+size = 13
+
 [window]
 opacity = 0.95

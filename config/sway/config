@@ -250,3 +250,6 @@ client.urgent           $color_urgent            $color_urgent       $color_urge
 include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf" "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
 
 default_border pixel 3
+
+# capture specific screen area
+    bindsym Shift+Ctrl+Print exec grimshot copy area
